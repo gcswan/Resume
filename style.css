@@ -1,0 +1,31 @@
+
+.section01 {
+  height:800px;
+  background-image:url(images/HeadshotBackground1400x788.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  justify-content: center;
+
+}
+.navbar {
+  height:auto;
+}
+.items{
+  margin:auto;
+
+}
+#gregswan {
+  font-family: Quicksand;
+  margin-top: 200px;
+
+}
+.nav-link {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#brand {
+  margin-left: 40px;
+  margin-right: 40px;
+}
