@@ -7,7 +7,7 @@ $(document).ready(function(){
       quotes.eq(quoteIndex % quotes.length)
           .delay(1000)
           .fadeIn(2000)
-          .delay(1000)
+          .delay(1500)
           .fadeOut(2000, showNextQuote);
         }
 
