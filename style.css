@@ -1,3 +1,4 @@
+/*-------- navbar -----------*/
 /*navbar*/
 .items{
   margin:auto;
@@ -10,10 +11,8 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+/*--------- section 1 -------------*/
 
-/*----------------------*/
-
-/*section 1*/
 #s1 {
   height:800px;
   background-image:url('images/NewHeadshotBackground1920x1080.jpg');
@@ -22,59 +21,102 @@
   background-position: center;
   display:flex;
   justify-content: center;
-  border-bottom: 5px solid #292b2c;
+  border-bottom: 10px solid #292b2c;
 }
 
+/*--------- typed text -------------*/
 
-
-/*typed text*/
-#h1 {
-  color: white;
-  margin-top: 650px;
-  font-size: 100px;
-}
-.text {
-  display:flex;
-  justify-content:center;
-  align-items: center;
-}
-
-#right-text {
+#typed-text {
   justify-content: center;
   align-items: center;
   font-size: 100px;
   font-weight:bold;
   color:white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }
-
-
-/*-----------------------------*/
-
-/*Section 2*/
+/*--------- section 2 -------------*/
 
 #s2 {
   background-color: #292b2c;
-  height: 400px;
-  border-bottom: 5px solid white;
+  height: 800px;
+  border-bottom: 10px solid #292b2c;
   width: 100%;
 }
-
-.biodiv {
-  height: 100%;
-  display:flex;
+#hearmeout {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.bio {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: left;
+  height: 100%;
 
 }
-.biotext {
-  color:#39B7CD	;
-  font-family:helvetica;
-  padding: 20px;
-  text-align: left;
-  font-size: 20px;
+.bio p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*--------- section 3 -------------*/
+#s3{
+  height:100%;
+  background-color: white
+}
+.guages {
+  display: flex;
+  flex-direction: row;
+}
+.guages svg {
+  padding: -20px;
+  margin-left: 20px;
+}
+.guages div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.liquidFillGaugeText {
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+
+/*--------- section 4 -------------*/
+
+#s4 {
+  height:600px;
+  background-color: #292b2c;
+}
+
+
+
+
+
+
+
+
+
+/*--------- section 5 -------------*/
+
+#s5 {
+  background-color: #39B7CD;
+  height:500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fadedtext {
   display:none;
-  color:#39B7CD	;
+  color:black	;
   font-family:helvetica;
   padding: 20px;
   text-align: center;
@@ -85,14 +127,13 @@
   justify-content: center;
 }
 
-/*--------------------------*/
-/*section 3*/
 
-#s3 {
-  background-color: #39B7CD;
-  height:500px;
-}
- /*icons */
+
+
+
+
+
+/*icons */
 
 .js {
   height: 40px;
@@ -115,6 +156,6 @@
 .icons {
   padding: 50px;
   height: 10%;
-  background-color: #39B7CD;
+
 
 }

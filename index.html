@@ -11,10 +11,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="typed.js" type="text/javascript"></script>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+
 
   </head>
   <body>
-
     <nav class="navbar navbar-inverse navbar-toggleable-md bg-inverse fixed-top">
         <button style="margin:10px;"class="navbar-toggler navbar-toggler-right bg-inverse" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,7 @@
             <div></div>
             <ul class="navbar-nav items nv-fill">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Journey</a>
+                    <a class="nav-link" href="#">My Story</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#">Talents</a>
@@ -41,72 +43,152 @@
         </div>
     </nav>
     <section id="s1" class="container-fluid">
-
-      <div id="right-text" class="text">
-
-      </div>
-
+      <div id="typed-text"></div>
       <script>
         var options = {
-        strings: ["HARDWORKER", "I'M A DEVELOPER", " I'M A DESIGNER", "I'M AN ALCOHOLIC", ".......JK"],
+        strings: ["", "I'M A DEVELOPER", " I'M A DESIGNER", "I'M AN ALCOHOLIC", ".......JK"],
           typeSpeed: 75,
           backSpeed: 75,
           loop: true,
           smartBackspace: false
         }
-        var typed = new Typed("#right-text", options);
+        var typed = new Typed("#typed-text", options);
       </script>
     </section>
+    <section id="s2" class="container-fluid">
+      <div class="row"
+        <div class="bio col-lg-6 container-fluid">
+          <div class="">
+            <h1 id="hearmeout">Hear Me Out..</h1>
+          </div>
+          <p>I built this site in an effort to convince potential employers that I
+            am more than just a resume that crosses your desk. I am many things and
+            I’m here to sell you on that notion. </p>
+          <p>I am a web developer, a filmmaker, and a lifelong student of both.
+            Frankly, I just enjoy building things and telling stories. As a kid I
+            was obsessed with lego. I would build a city, a bank, or a boat, rebuild
+            it a couple of times, and then play out the different narrative scenarios
+            I had created with tailor made lego figures. As an adult, I still enjoy
+            the same things, I've just replaced my legos with HTML and JavaScript
+            libraries. At heart I’m still the same creative innovator. It’s not
+            out of the ordinary for me to  dive right into a project without any
+            previous idea of what I’m doing and try to create something new. That’s
+            how I learn. I try and I fail- I rinse and I repeat. </p>
+          <p>In the past year alone I have taught myself how to build a static site
+            from scratch. With my Github repository in place, I built a beginners
+            web portfolio using HTML, CSS, Bootstrap, Javascript, a little jQuery,
+            and a lot of help from Stack Overflow. This was my first step into the
+            world of web development. With a desire to further my education in web
+            development, I enrolled in Austin Coding Academy’s full stack nine month
+            bootcamp. Since enrolling in ACA, I have spent most of my time studying
+            Javascript and becoming fluent in technologies such as Node and React.
+            These are just a few of the steps I have taken this year in an effort
+            to become a better developer. So what comes next? My short term goals
+            include- learning my second programming language (most likely python),
+            building a full stack web application from the ground up, and the obvious
+            one.. getting hired as junior web developer!
+          </p>
 
-
-    <section id="s3">
-      <div class="d-flex justify-content-center icons col-lg-12">
-        <img  class="imgsize" src="images/windows.png" alt="">
-        <img  class="imgsize" src="images/apple.png" alt=""
-        <img  class="imgsize" src="images/github.png" alt="">
-        <img  class="imgsize" src="images/node.png" alt="">
-        <img  class="imgsize" src="images/js.png" alt="">
-        <img  class="imgsize" src="images/html.png" alt="">
-        <img  class="imgsize" src="images/react.png" alt="">
-        <img  class="imgsize" src="images/css.png" alt="">
-        <img  class="imgsize" src="images/bootstrap.png" alt="">
-        <img  class="imgsize" src="images/github.png" alt="">
-        <img  class="imgsize" src="images/chrome.png" alt="">
-        <img  class="imgsize" src="images/terminal.png" alt="">
-
-      </div>
-
-
-
-
-    </section>
-    <section id="s2" class="d-flex align-items-center">
-
-
-      <div style="border-right: 2px solid white;" class="biodiv  col-lg-6">
-        <p class="biotext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-           ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-           est laborum.</p>
-      </div>
-
-        <div style="border-left: 3px solid white;" id="fade" class="biodiv  col-lg-6" >
-
-          <h2 class="fadedtext">Greg is a 26 year old human</h2>
-          <h2 class="fadedtext">Greg enjoys social interaction with other humans</h2>
-          <h2 class="fadedtext">Deer have don't have gall bladders</h2>
-          <h2 class="fadedtext">Deer not having gall bladders has nothing to do with web development or Greg. But at least if you choose not to hire Greg,  you learned something.</h2>
-          <h2 class="fadedtext">However it's worth noting, Greg does have a gall bladder</h2>
         </div>
+        <div class="col-lg-6">
+        </div>
+      </div>
+
+
+
 
     </section>
+    <section id="s3" class="container-fluid">
+      <div class="guages row">
+        <div id="htmlGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <svg id="fillgauge1" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge1 = loadLiquidFillGauge("fillgauge1", 90);
+            var cssConfig = liquidFillGaugeDefaultSettings();
+            cssConfig.waveCount = "5"
+            cssConfig.waveAnimateTime = "9000"
+            cssConfig.waveColor = "#0F8000"
+            cssConfig.circleColor = "#69CC5C"
+            cssConfig.waveTextColor = "#69CC5C"
+          </script>
+          <h1 class="titles">HTML</h1>
 
+        </div>
+        <div id="cssGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <svg id="fillgauge2" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge2= loadLiquidFillGauge("fillgauge2", 85, cssConfig);
+            var jsConfig = liquidFillGaugeDefaultSettings();
+            jsConfig.circleColor = "#F58B5D";
+            jsConfig.textColor = "#553300";
+            jsConfig.waveTextColor = "#F58B5D";
+            jsConfig.waveColor = "#E04300";
+            jsConfig.waveAnimateTime = 2000;
+            jsConfig.waveHeight = 0.3;
+            jsConfig.waveCount = 1;
+          </script>
+          <h1 class="titles">CSS</h1>
+        </div>
+        <div id="jsGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <svg id="fillgauge3" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge3 = loadLiquidFillGauge("fillgauge3", 75, jsConfig);
+            var reactConfig = liquidFillGaugeDefaultSettings();
+            reactConfig.circleColor = "#A87CC2";
+            reactConfig.textColor = "#553300";
+            reactConfig.waveTextColor = "#A87CC2";
+            reactConfig.waveColor = "#58038A";
+            reactConfig.waveAnimateTime = 4000;
+            reactConfig.waveHeight = 0.15;
+            reactConfig.waveCount = 2;
+          </script>
+          <h1 class="titles">JavaScript</h1>
+        </div>
+        <div id="reactGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <svg id="fillgauge4" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge4 = loadLiquidFillGauge("fillgauge4", 67, reactConfig);
+            var config4 = liquidFillGaugeDefaultSettings();
+            config4.circleColor = "#FF7777";
+            config4.textColor = "#FF4444";
+            config4.waveTextColor = "#FFAAAA";
+            config4.waveColor = "#FFDDDD";
+            config4.circleThickness = 0.2;
+            config4.textVertPosition = 0.2;
+            config4.waveAnimateTime = 1000;
+            config1.waveAnimate = true;
+          </script>
+          <h1 class="titles">React.js</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="s4" class="container-fluid"></section>
+    <section id="s5" class="container-fluid">
+      <div id="fade" class="" >
+        <h2 class="fadedtext">"The question isn’t who is going to let me; it’s who is going to stop me." </br></br> –Ayn Rand</h2>
+        <h2 class="fadedtext">"The only person you are destined to become is the person you decide to be." </br></br> –Ralph Waldo Emerson</h2>
+      </div>
+    </section>
+
+    <footer></footer>
 
 
   </body>
 
 
 </html>
+
+
+<!-- <img  class="imgsize" src="images/windows.png" alt="">
+<img  class="imgsize" src="images/apple.png" alt="">
+<img  class="imgsize" src="images/github.png" alt="">
+<img  class="imgsize" src="images/node.png" alt="">
+<img  class="imgsize" src="images/js.png" alt="">
+<img  class="imgsize" src="images/html.png" alt="">
+<img  class="imgsize" src="images/react.png" alt="">
+<img  class="imgsize" src="images/css.png" alt="">
+<img  class="imgsize" src="images/bootstrap.png" alt="">
+<img  class="imgsize" src="images/github.png" alt="">
+<img  class="imgsize" src="images/chrome.png" alt="">
+<img  class="imgsize" src="images/terminal.png" alt=""> -->
