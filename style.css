@@ -40,7 +40,7 @@
 
 #s2 {
   background-color: #292b2c;
-  height: 800px;
+  height: 100%;
   border-bottom: 10px solid #292b2c;
   width: 100%;
 }
@@ -88,7 +88,10 @@
   font-family: Helvetica;
   font-weight: bold;
 }
-
+.skills {
+  justify-content: center;
+  text-align: center;
+}
 
 /*--------- section 4 -------------*/
 
