@@ -86,20 +86,17 @@
             technologies such as Node and React. These are just a few of the steps
             I have taken this year in an effort to become a better developer.
             So what comes next? My short term goals include- learning my second
-            programming language (most likely python), building a full stack web
+            programming language, building a full stack web
             application from the ground up, and the obvious one.. getting hired
             as junior web developer!
           </p>
 
       </div>
 
-
-
-
     </section>
     <section id="s3" class="container-fluid">
-      <div class="">
-        <h1>TECHNOLOGIES</h1>
+      <div class="skillsHeader">
+        <h1 id="techdash">Technology Dashboard</h1>
       </div>
 
       <div class="guages row">
@@ -111,9 +108,9 @@
             var cssConfig = liquidFillGaugeDefaultSettings();
             cssConfig.waveCount = "5"
             cssConfig.waveAnimateTime = "9000"
-            cssConfig.waveColor = "#0F8000"
-            cssConfig.circleColor = "#69CC5C"
-            cssConfig.waveTextColor = "#69CC5C"
+            cssConfig.waveColor = " #87cefa"
+            cssConfig.circleColor = "#0F8000"
+            cssConfig.waveTextColor = "#0F8000"
           </script>
 
         </div>
@@ -123,10 +120,10 @@
           <script language="JavaScript">
             var gauge2= loadLiquidFillGauge("fillgauge2", 85, cssConfig);
             var jsConfig = liquidFillGaugeDefaultSettings();
-            jsConfig.circleColor = "#F58B5D";
+            jsConfig.circleColor = "#d64903";
             jsConfig.textColor = "#553300";
-            jsConfig.waveTextColor = "#F58B5D";
-            jsConfig.waveColor = "#E04300";
+            jsConfig.waveTextColor = "#d64903";
+            jsConfig.waveColor = "#c890ff";
             jsConfig.waveAnimateTime = 2000;
             jsConfig.waveHeight = 0.3;
             jsConfig.waveCount = 1;
@@ -139,10 +136,10 @@
           <script language="JavaScript">
             var gauge3 = loadLiquidFillGauge("fillgauge3", 75, jsConfig);
             var reactConfig = liquidFillGaugeDefaultSettings();
-            reactConfig.circleColor = "#A87CC2";
+            reactConfig.circleColor = "#58038A";
             reactConfig.textColor = "#553300";
-            reactConfig.waveTextColor = "#A87CC2";
-            reactConfig.waveColor = "#58038A";
+            reactConfig.waveTextColor = "#58038A";
+            reactConfig.waveColor = "#d6d603";
             reactConfig.waveAnimateTime = 4000;
             reactConfig.waveHeight = 0.15;
             reactConfig.waveCount = 2;
@@ -153,19 +150,83 @@
           <svg id="fillgauge4" width="40%" height="180"></svg>
           <script language="JavaScript">
             var gauge4 = loadLiquidFillGauge("fillgauge4", 67, reactConfig);
-            var config4 = liquidFillGaugeDefaultSettings();
-            config4.circleColor = "#FF7777";
-            config4.textColor = "#FF4444";
-            config4.waveTextColor = "#FFAAAA";
-            config4.waveColor = "#FFDDDD";
-            config4.circleThickness = 0.2;
-            config4.textVertPosition = 0.2;
-            config4.waveAnimateTime = 1000;
+            var nodeConfig = liquidFillGaugeDefaultSettings();
+            nodeConfig.circleColor = "#c20249";
+            nodeConfig.textColor = "#553300";
+            nodeConfig.waveTextColor = "#c20249";
+            nodeConfig.waveColor = "#81d603";
+            nodeConfig.waveAnimateTime = 2000;
+            nodeConfig.waveHeight = 0.05;
+            nodeConfig.waveCount = 2;
 
           </script>
 
         </div>
       </div>
+      <div class="guages row">
+
+        <div id="nodeGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <h1 class="titles">Node.JS</h1>
+          <svg id="fillgauge8" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge4 = loadLiquidFillGauge("fillgauge8", 70, nodeConfig);
+            var bootstrapConfig = liquidFillGaugeDefaultSettings();
+            bootstrapConfig.waveCount = "5"
+            bootstrapConfig.waveAnimateTime = "17000"
+            bootstrapConfig.waveColor = "#f7bd00"
+            bootstrapConfig.circleColor = "#c90000"
+            bootstrapConfig.waveTextColor = "#c90000"
+            bootstrapConfig.waveCount = "1";
+            bootstrapConfig.waveHeight = ".1";
+
+          </script>
+        </div>
+
+        <div id="bootstrapGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <h1 class="titles">Bootstrap</h1>
+          <svg id="fillgauge6" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge2= loadLiquidFillGauge("fillgauge6", 82, bootstrapConfig);
+            var jQueryConfig = liquidFillGaugeDefaultSettings();
+            jQueryConfig.circleColor = "#049ebd";
+            jQueryConfig.textColor = "#553300";
+            jQueryConfig.waveTextColor = "#049ebd";
+            jQueryConfig.waveColor = "#FFAAAA";
+            jQueryConfig.waveAnimateTime = 1000;
+            jQueryConfig.waveHeight = 0.05;
+            jQueryConfig.waveCount = 3;
+          </script>
+        </div>
+
+        <div id="jqueryGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <h1 class="titles">jQuery</h1>
+          <svg id="fillgauge7" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge3 = loadLiquidFillGauge("fillgauge7", 72, jQueryConfig);
+            var githubConfig = liquidFillGaugeDefaultSettings();
+            githubConfig.circleColor = "#FF7777";
+            githubConfig.textColor = "#00cef7";
+            githubConfig.waveTextColor = "#FFAAAA";
+            githubConfig.waveColor = "#00cef7";
+
+            githubConfig.waveAnimateTime = 100000;
+            githubConfig.waveCount = "2";
+          </script>
+        </div>
+
+        <div id="githubGuage" class="col-sm-12 col-md-6 col-lg-3">
+          <h1 class="titles">GitHub</h1>
+          <svg id="fillgauge5" width="40%" height="180"></svg>
+          <script language="JavaScript">
+            var gauge1 = loadLiquidFillGauge("fillgauge5", 96, githubConfig);
+            var bootstrapConfig = liquidFillGaugeDefaultSettings();
+            bootstrapConfig.waveCount = "5"
+            bootstrapConfig.waveAnimateTime = "9000"
+            bootstrapConfig.waveColor = "#0F8000"
+            bootstrapConfig.circleColor = "#69CC5C"
+            bootstrapConfig.waveTextColor = "#69CC5C"
+          </script>
+        </div>
     </section>
 
     <section id="s4" class="container-fluid"></section>

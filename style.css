@@ -21,7 +21,7 @@
   background-position: center;
   display:flex;
   justify-content: center;
-  border-bottom: 10px solid #292b2c;
+
 }
 
 /*--------- JavaScript typed text -------------*/
@@ -43,11 +43,12 @@
   height: 100%;
   border-bottom: 10px solid #292b2c;
   width: 100%;
+  border: 10px solid #39B7CD;
 }
 #hearmeout {
   color: white;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 .bio {
   color: white;
@@ -57,7 +58,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  height: 100%;
+  height: 700px;
 
 }
 .bio p {
@@ -68,29 +69,48 @@
 /*--------- section 3 GUAGES -------------*/
 #s3{
   height:100%;
-  background-color: #BAB8BB
 }
+
 .guages {
   display: flex;
   flex-direction: row;
 }
+
 .guages svg {
   padding: -20px;
   margin-left: 20px;
+  margin-bottom: 5%;
 }
+
 .guages div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .liquidFillGaugeText {
   font-family: Helvetica;
   font-weight: bold;
 }
+
+.skillsHeader {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skills {
   justify-content: center;
   text-align: center;
+}
+
+#techdash {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 25px;
+  margin-bottom: 20px;
 }
 
 /*--------- section 4 -------------*/
@@ -98,6 +118,7 @@
 #s4 {
   height:600px;
   background-color: #292b2c;
+  border: 10px solid #39B7CD;
 }
 
 
@@ -116,6 +137,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 10px solid #292b2c;
 }
 .fadedtext {
   display:none;
