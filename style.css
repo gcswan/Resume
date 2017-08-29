@@ -116,18 +116,46 @@
 /*--------- section 4 -------------*/
 
 #s4 {
-  height:600px;
+  height:1200px;
   background-color: #292b2c;
   border: 10px solid #39B7CD;
+
 }
-#s4 a {
-  color: white;
-}
-.links {
+#projectHeader {
+  height: 200px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#projectDashboard {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 25px;
+  color: white;
+
 }
 
+.projectlink a {
+  margin: 10px;
+}
+
+.imgsize {
+  margin:3px;
+  height: 100px;
+  width: 100px;
+}
+
+.projectlink {
+  border: 1px solid white;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+}
 
 
 
