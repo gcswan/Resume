@@ -1,3 +1,6 @@
+body {
+  postion: relative;
+}
 /*-------- navbar -----------*/
 /*navbar*/
 .items{
@@ -238,7 +241,7 @@
 
 /*--------- footer -------------*/
 
-footer {
+#s7 {
   height: 100px;
   background-color: #292b2c;
   display: flex;
@@ -246,7 +249,7 @@ footer {
   align-items: center;
   flex-direction:row;
 }
-footer h6 {
+#s7 h6 {
   color: white;
   padding: 10px;
 }
