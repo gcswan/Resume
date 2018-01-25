@@ -1,5 +1,6 @@
 body {
-  postion: relative;
+  position: relative;
+  height: 100%;
 }
 /*-------- navbar -----------*/
 /*navbar*/
@@ -9,21 +10,39 @@ body {
 .nav-link {
   margin-left: 60px;
   margin-right: 60px;
+  font-size: 24px;
+}
+.nav-link:hover {
+  color: blue;
 }
 #brand {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 30px;
 }
+.navbar {
+  border-bottom: 5px solid #3F7F9F;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 /*--------- section 1 HEADSHOT -------------*/
 
 #s1 {
-  height:800px;
+  height:100vh;
   background-image:url('images/NewHeadshotBackground1920x1080.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display:flex;
   justify-content: center;
+  border: 5px solid #3F7F9F;
 
 }
 
@@ -39,215 +58,14 @@ body {
   justify-content:center;
   align-items: center;
 }
-/*--------- section 2 BIOGRAPHY-------------*/
+/*--------- section 7 -------------*/
 
-/* #s2 {
-  background-color: #292b2c;
-  height: 100%;
-  border-bottom: 10px solid #292b2c;
-  width: 100%;
-  border: 10px solid #39B7CD;
-}
-#hearmeout {
-  color: white;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.bio {
-  color: white;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  height: 700px;
-
-}
-.bio p {
-  margin-left: 5%;
-  margin-right: 5%;
-} */
-
-/*--------- section 3 GUAGES -------------*/
-/* #s3{
-  height:100%;
-}
-
-.guages {
-  display: flex;
-  flex-direction: row;
-}
-
-.guages svg {
-  padding: -20px;
-  margin-left: 20px;
-  margin-bottom: 5%;
-}
-
-.guages div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.liquidFillGaugeText {
-  font-family: Helvetica;
-  font-weight: bold;
-}
-
-.skillsHeader {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills {
-  justify-content: center;
-  text-align: center;
-}
-
-#techdash {
-  font-weight: bold;
-  font-size: 50px;
-  margin: 25px;
-  margin-bottom: 20px;
-} */
-
-/*--------- section 4 -------------*/
-
-/* #s4 {
-  height:1200px;
-  background-color: #292b2c;
-  border: 10px solid #292b2c;
-
-}
-#projectHeader {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#projectDashboard {
-  font-weight: bold;
-  font-size: 50px;
-  margin: 25px;
-  color: white;
-
-}
-
-.projectlink a {
-  margin: 10px;
-}
-
-.imgsize {
-  margin:3px;
-  height: 100px;
-  width: 100px;
-}
-
-.projectlink {
-  border: 1px solid white;
-  height: 300px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align:center;
-  background-color: #292b2c;
-}
-
-#s4 h4 {
-  padding: 20px;
-}
- */
-
-
-
-
-/*--------- section 5 -------------*/
-
-#s5 {
-  
-  background-color: white;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 10px solid #292b2c;
-}
-.fadedtext {
-  display:none;
-  color:black	;
-  font-family:helvetica;
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-}
-#fade {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-}
-/*--------- section 6 -------------*/
-
-#s6 {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-
-}
-
-.contactheader {
-  height:100px;
-  display:flex;
-  text-align:center;
-  justify-content: center;
-  align-items:center;
-}
-
-#phonenumber .text {
-  position:relative;
-  visibility:hidden;
-}
-
-#phonenumber:hover .text{
-  visibility: visible;
-}
-
-.contacts {
-  /*border: 1px solid black;*/
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-}
-
-.contacts a {
-  display: flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.contacts a img {
-  justify-content: center;
-  align-items: center;
-  /*border: 1px solid black;*/
-}
-
-/*--------- footer -------------*/
 
 #s7 {
   height: 100px;
   background-color: #292b2c;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction:row;
 }
@@ -255,31 +73,10 @@ body {
   color: white;
   padding: 10px;
 }
+.s7-items {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+}
 
 
-/*icons */
-
-.js {
-  height: 40px;
-  width: 40px;
-  margin-right:5px;
-}
-.apple {
-  height: 40px;
-  width: 40px;
-  margin: 5px;
-}
-.imgsize {
-  margin:3px;
-  height: 50px;
-  width: 50px;
-}
-.border {
-  border: 1px solid black;
-}
-.icons {
-  padding: 50px;
-  height: 10%;
-
-
-}
