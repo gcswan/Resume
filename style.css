@@ -80,3 +80,8 @@ body {
 }
 
 
+/*--------- Projects -------------*/
+#main-projects {
+  background-image: url("./images/gray-background.jpeg");
+  height: 800px;
+}
