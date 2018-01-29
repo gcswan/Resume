@@ -4,6 +4,10 @@ body {
 }
 /*-------- navbar -----------*/
 /*navbar*/
+.center {
+  justify-content: center;
+  text-align: center;
+}
 .items{
   margin:auto;
 }
@@ -19,6 +23,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-size: 30px;
+  text-align: center;
 }
 .navbar {
   border-bottom: 5px solid #3F7F9F;
@@ -81,7 +86,67 @@ body {
 
 
 /*--------- Projects -------------*/
-#main-projects {
-  background-image: url("./images/gray-background.jpeg");
-  height: 800px;
+#project-body {
+  background-image: url("./images/simple.jpg");
+  background-size: contain;
+  
+  height: 100vh;
+  
 }
+.project-container {
+  height: 100%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .project-box {
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+ }
+ .project-link:hover {
+   opacity: 0.80;
+   width: 90%;
+   height: 300px;
+   cursor: pointer;
+   text-decoration: none;
+ }
+ .project-box div {
+   margin: 10px;
+   width: 40%;
+ }
+ .project-box div p, h4 {
+   text-align: left;
+ }
+ .spacer {
+   height: 100px;
+ }
+
+ #res-space {
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+   
+ .project-link {
+   width: 80%;
+   height: 250px;
+   border: 2px solid red;
+   margin-bottom: 5%;
+   background-color: rgba(41, 43, 44, 0.75);
+   border-radius: 25px;
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+ }
