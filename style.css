@@ -95,7 +95,7 @@ body {
 
 /*--------- Projects -------------*/
 #project-body {
-  background-image: url("./images/simple.jpg");
+  background-color: #6099A5;
   background-size: contain;
   
   height: 100vh;
